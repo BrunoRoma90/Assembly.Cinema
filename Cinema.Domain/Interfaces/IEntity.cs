@@ -1,7 +1,11 @@
 ﻿namespace Cinema.Domain.Interfaces
 {
-    public interface IEntity
+    public interface IEntity<TId>
     {
-        public int Id { get; }
+        public TId Id { get; }
+    }
+    public interface ISoftDeletable
+    {
+        public bool IsDeleted { get; set; }
     }
 }

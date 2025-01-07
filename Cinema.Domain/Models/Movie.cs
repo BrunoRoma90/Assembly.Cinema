@@ -3,7 +3,7 @@ using Cinema.Domain.Common;
 
 namespace Cinema.Domain.Models
 {
-    public class Movie : Entity
+    public class Movie : Entity<int>
     {      
         public string Description { get; private set; }
         public string Title { get; private set; }
@@ -22,7 +22,7 @@ namespace Cinema.Domain.Models
         public List<Review> Reviews { get; set; }
 
 
-        private Movie(int id,string title): base(id) 
+        private Movie(int id,string title) 
         {
             Title = title;
         }

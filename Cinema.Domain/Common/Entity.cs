@@ -1,14 +1,10 @@
 ﻿using Cinema.Domain.Interfaces;
+using System.Security.Cryptography;
 
 namespace Cinema.Domain.Common
 {
-    public abstract class Entity : IEntity
+    public class Entity<TId> : IEntity<TId>
     {
-        public int Id { get; private set; }
-
-        protected Entity(int id)
-        {
-            Id = id;
-        }
+        public TId Id { get; private set; } = default;
     }
 }

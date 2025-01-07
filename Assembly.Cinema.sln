@@ -11,21 +11,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7EFDE3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{CA50B7F2-05F3-423E-BD76-4887BABAB1B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly.Cinema.Services", "Assembly.Cinema.Services\Assembly.Cinema.Services.csproj", "{40E6548D-E529-4F5F-9554-BCDE73B64E28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Cinema.Services", "Assembly.Cinema.Services\Assembly.Cinema.Services.csproj", "{40E6548D-E529-4F5F-9554-BCDE73B64E28}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{C4ABC7BC-DD7D-4B91-83BC-7B8196DA93B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly.Cinema.Data", "Assembly.Cinema.Data\Assembly.Cinema.Data.csproj", "{B0D2E8E4-6720-4588-BBBF-230214986ADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Cinema.Data", "Assembly.Cinema.Data\Assembly.Cinema.Data.csproj", "{B0D2E8E4-6720-4588-BBBF-230214986ADA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly.Cinema.Data.Ado.Net", "Assembly.Cinema.Data.Ado.Net\Assembly.Cinema.Data.Ado.Net.csproj", "{ABDC64E1-A185-4B04-A45B-25816C0BA8EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Cinema.Data.Ado.Net", "Assembly.Cinema.Data.Ado.Net\Assembly.Cinema.Data.Ado.Net.csproj", "{ABDC64E1-A185-4B04-A45B-25816C0BA8EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly.Cinema.Data.InMemory", "Assembly.Cinema.Data.InMemory\Assembly.Cinema.Data.InMemory.csproj", "{29424CF0-15CF-4565-BC3F-260B88D08015}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Cinema.Data.InMemory", "Assembly.Cinema.Data.InMemory\Assembly.Cinema.Data.InMemory.csproj", "{29424CF0-15CF-4565-BC3F-260B88D08015}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{008D7474-48B0-4ED7-9F56-DB5038A7CDDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly.Cinema.WebAPI", "Assembly.Cinema.WebAPI\Assembly.Cinema.WebAPI.csproj", "{6DD6593C-6D85-40A4-A026-238DB38638E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Cinema.WebAPI", "Assembly.Cinema.WebAPI\Assembly.Cinema.WebAPI.csproj", "{6DD6593C-6D85-40A4-A026-238DB38638E2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3195599F-509C-4E80-A09D-834063906F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly.Cinema.Domain.Core", "Assembly.Cinema.Domain.Core\Assembly.Cinema.Domain.Core.csproj", "{078FCE97-4E78-454F-8329-383286064070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly.Cinema.IoC", "Assembly.Cinema.IoC\Assembly.Cinema.IoC.csproj", "{6142BC3F-664E-4E0D-9081-6DBEEFBAB64B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +65,14 @@ Global
 		{6DD6593C-6D85-40A4-A026-238DB38638E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DD6593C-6D85-40A4-A026-238DB38638E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DD6593C-6D85-40A4-A026-238DB38638E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078FCE97-4E78-454F-8329-383286064070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078FCE97-4E78-454F-8329-383286064070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078FCE97-4E78-454F-8329-383286064070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078FCE97-4E78-454F-8329-383286064070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6142BC3F-664E-4E0D-9081-6DBEEFBAB64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6142BC3F-664E-4E0D-9081-6DBEEFBAB64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6142BC3F-664E-4E0D-9081-6DBEEFBAB64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6142BC3F-664E-4E0D-9081-6DBEEFBAB64B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +85,8 @@ Global
 		{ABDC64E1-A185-4B04-A45B-25816C0BA8EA} = {C4ABC7BC-DD7D-4B91-83BC-7B8196DA93B8}
 		{29424CF0-15CF-4565-BC3F-260B88D08015} = {C4ABC7BC-DD7D-4B91-83BC-7B8196DA93B8}
 		{6DD6593C-6D85-40A4-A026-238DB38638E2} = {008D7474-48B0-4ED7-9F56-DB5038A7CDDB}
+		{078FCE97-4E78-454F-8329-383286064070} = {7EFDE3DB-8E4E-4D14-98E2-7F5B1A40E7F6}
+		{6142BC3F-664E-4E0D-9081-6DBEEFBAB64B} = {C4ABC7BC-DD7D-4B91-83BC-7B8196DA93B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A7197A5-F6DF-4219-8702-BCFDEF84C624}

@@ -2,13 +2,13 @@
 
 namespace Cinema.Domain.Models
 {
-    public class Comment : Entity
+    public class Comment : Entity<int>
     {      
         public string Text { get; set; }
         public User User { get; set; }
         public Movie Movie { get; set; }
 
-        private Comment(int id,string text, User user, Movie movie): base(id)
+        private Comment(int id,string text, User user, Movie movie)
         {
             Text = text;
             User = user;

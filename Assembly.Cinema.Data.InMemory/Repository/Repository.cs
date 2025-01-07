@@ -1,4 +1,6 @@
 ﻿//Classe abstract é necessário criar outras classe que herdem dela
+using Assembly.Cinema.Domain.Core.IRepository;
+
 public abstract class Repository<TEntity, Tid> : IRepository<TEntity, Tid> where TEntity : class
 {
     //Método abstrato não possui implementação, possui apenas implementação na classe derivada

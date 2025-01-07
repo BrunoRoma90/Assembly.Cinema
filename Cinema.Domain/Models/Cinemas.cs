@@ -2,12 +2,12 @@
 
 namespace Cinema.Domain.Models
 {
-    public class Cinemas : Entity
+    public class Cinemas : Entity<int>
     {
         public string Name { get; set; }
         public string Locale { get; set; }
 
-        public Cinemas(int id, string name, string locale) :base(id)
+        public Cinemas(int id, string name, string locale) 
         {
             Name = name;
             Locale = locale;

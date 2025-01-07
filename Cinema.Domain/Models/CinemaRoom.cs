@@ -2,7 +2,7 @@
 
 namespace Cinema.Domain.Models
 {
-    public class CinemaRoom : Entity
+    public class CinemaRoom : Entity<int>
     {
         public Cinemas Cinema { get; set; }
 
@@ -14,7 +14,7 @@ namespace Cinema.Domain.Models
 
         
 
-        private CinemaRoom(int id, Cinemas cinema,int number,int capacity, List<Row> rows) : base(id) 
+        private CinemaRoom(int id, Cinemas cinema,int number,int capacity, List<Row> rows) 
         {
             Cinema = cinema;
             Number = number;

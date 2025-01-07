@@ -2,7 +2,7 @@
 
 namespace Cinema.Domain.Models
 {
-    public class User : Entity
+    public class User : AuditableEntity<int>
     {
         public Name Name { get; set; }
         public string Email { get; set; }
@@ -11,7 +11,7 @@ namespace Cinema.Domain.Models
         public List<Review> Reviews { get; set; }
         public List<Ticket> PurchasedTicket { get; set; }
 
-        private User(int id, Name name, string email, string password, List<Review> reviews, List<Ticket> purchasedTicket): base(id)
+        private User(Name name, string email, string password, List<Review> reviews, List<Ticket> purchasedTicket)
         {
             Name = name;
             Email = email;

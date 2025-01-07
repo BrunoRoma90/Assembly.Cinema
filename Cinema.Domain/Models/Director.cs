@@ -2,13 +2,13 @@
 
 namespace Cinema.Domain.Models
 {
-    public class Director : Entity
+    public class Director : Entity<int>
     {
         public Name Name { get; set;}
         
 
 
-        private Director(int id, Name name): base(id) 
+        private Director(int id, Name name)
         {
             Name = name;
         }

@@ -2,7 +2,7 @@
 
 namespace Cinema.Domain.Models
 {
-    public class Review : Entity
+    public class Review : Entity<int>
     {
         public User User { get; set; }
         public Movie Movie { get; set; }
@@ -12,7 +12,7 @@ namespace Cinema.Domain.Models
 
         public DateTime ReviewDate { get; set; }
 
-        private Review(int id, User user, Movie movie, Rating rating, Comment comment, DateTime reviewDate): base(id)
+        private Review(int id, User user, Movie movie, Rating rating, Comment comment, DateTime reviewDate)
         {
             User = user;
             Movie = movie;

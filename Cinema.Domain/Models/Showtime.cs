@@ -2,7 +2,7 @@
 
 namespace Cinema.Domain.Models
 {
-    public class Showtime : Entity
+    public class Showtime : Entity<int>
     {
         public Movie Movie { get; set; }
 
@@ -12,7 +12,7 @@ namespace Cinema.Domain.Models
         public DateTime EndTime { get; set; }
         public double TicketPrice { get; set; }
 
-        private Showtime(int id,Movie movie, CinemaRoom room, DateTime startTime, DateTime endTime, double ticketPrice): base(id)
+        private Showtime(int id,Movie movie, CinemaRoom room, DateTime startTime, DateTime endTime, double ticketPrice)
         {
             Movie = movie;
             Room = room;

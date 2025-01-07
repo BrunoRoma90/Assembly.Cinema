@@ -2,7 +2,7 @@
 
 namespace Cinema.Domain.Models
 {
-    public class Payment : Entity
+    public class Payment : Entity<int>
     {
         public User User { get; set; }
         public Ticket Ticket { get; set; }
@@ -14,7 +14,6 @@ namespace Cinema.Domain.Models
 
 
         private Payment(int id, User user, Ticket ticket, string paymentMethod, DateTime paymentDate, bool isSuccessful):
-            base(id)
         {
             User = user;
             Ticket = ticket;
