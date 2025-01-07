@@ -1,18 +1,17 @@
 ﻿using Cinema.Domain.Common;
 
-namespace Cinema.Domain.Models
+namespace Cinema.Domain.Models;
+
+public class Director : AuditableEntity <int>
 {
-    public class Director : Entity<int>
+    public Name Name { get; set;}
+    
+
+
+    public Director( Name name)
     {
-        public Name Name { get; set;}
-        
-
-
-        private Director(int id, Name name)
-        {
-            Name = name;
-        }
-
-
+        Name = name;
     }
+
+
 }

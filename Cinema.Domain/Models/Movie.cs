@@ -1,41 +1,39 @@
-﻿using System.Globalization;
-using Cinema.Domain.Common;
+﻿using Cinema.Domain.Common;
 
-namespace Cinema.Domain.Models
-{
-    public class Movie : Entity<int>
-    {      
-        public string Description { get; private set; }
-        public string Title { get; private set; }
+namespace Cinema.Domain.Models;
 
-        public Category Category { get; private set; }
+public class Movie : AuditableEntity<int>
+{      
+    public string Description { get; private set; }
+    public string Title { get; private set; }
 
-        public DateTime ReleaseDate { get; set; }
+    public Category Category { get; private set; }
 
-        public int DurationMinutes { get; set; }
-        public List<Actor> Actors { get; private set; }
+    public DateTime ReleaseDate { get; set; }
 
-        public List<Director> Director { get; private set; }
+    public int DurationMinutes { get; set; }
+    public List<Actor> Actors { get; private set; }
 
-        public int ParentalRating { get; private set; }
+    public List<Director> Director { get; private set; }
 
-        public List<Review> Reviews { get; set; }
+    public int ParentalRating { get; private set; }
 
-
-        private Movie(int id,string title) 
-        {
-            Title = title;
-        }
+    public List<Review> Reviews { get; set; }
 
 
-        public static Movie Create(string title)
-        {
-            return new Movie(1, "blabla");
-        }
-       
-        public static Movie Update(string title)
-        {
-            return new Movie(1, "blablabla2");
-        }
+    private Movie(int id,string title) 
+    {
+        Title = title;
+    }
+
+
+    public static Movie Create(string title)
+    {
+        return new Movie(1, "blabla");
+    }
+   
+    public static Movie Update(string title)
+    {
+        return new Movie(1, "blablabla2");
     }
 }

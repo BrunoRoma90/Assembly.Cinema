@@ -1,14 +1,13 @@
 ﻿using Cinema.Domain.Common;
 
-namespace Cinema.Domain.Models
-{
-    public class Category : Entity<int>
-    {
-        public string Name { get; set; }
+namespace Cinema.Domain.Models;
 
-        private Category(int id ,string name)
-        {
-            Name = name;
-        }
+public class Category : AuditableEntity<int>
+{
+    public string Name { get; set; }
+
+    public Category(int id ,string name)
+    {
+        Name = name;
     }
 }

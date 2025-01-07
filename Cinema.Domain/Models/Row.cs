@@ -1,11 +1,12 @@
 ﻿using Cinema.Domain.Common;
-using Cinema.Domain.Models;
 
-public class Row : Entity<int>
+namespace Cinema.Domain.Models;
+
+public class Row : AuditableEntity<int>
 {
     public List<Seat> Seats { get; set; }
 
-    private Row(int id, List<Seat> seats) 
+    public Row(int id, List<Seat> seats) 
     {
         Seats = seats;
     }

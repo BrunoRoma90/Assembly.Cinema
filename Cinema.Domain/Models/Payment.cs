@@ -1,25 +1,24 @@
 ﻿using Cinema.Domain.Common;
 
-namespace Cinema.Domain.Models
+namespace Cinema.Domain.Models;
+
+public class Payment : AuditableEntity<int>
 {
-    public class Payment : Entity<int>
+    public User User { get; set; }
+    public Ticket Ticket { get; set; }
+    public string PaymentMethod { get; set; }
+
+    public DateTime PaymentDate { get; set; }
+
+    public bool IsSuccessful { get; set; }
+
+
+    private Payment(User user, Ticket ticket, string paymentMethod, DateTime paymentDate, bool isSuccessful):
     {
-        public User User { get; set; }
-        public Ticket Ticket { get; set; }
-        public string PaymentMethod { get; set; }
-
-        public DateTime PaymentDate { get; set; }
-
-        public bool IsSuccessful { get; set; }
-
-
-        private Payment(int id, User user, Ticket ticket, string paymentMethod, DateTime paymentDate, bool isSuccessful):
-        {
-            User = user;
-            Ticket = ticket;
-            PaymentMethod = paymentMethod;
-            PaymentDate = paymentDate;
-            IsSuccessful = isSuccessful;
-        }
+        User = user;
+        Ticket = ticket;
+        PaymentMethod = paymentMethod;
+        PaymentDate = paymentDate;
+        IsSuccessful = isSuccessful;
     }
 }

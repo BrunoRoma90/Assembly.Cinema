@@ -1,15 +1,14 @@
 ﻿using Cinema.Domain.Common;
 
-namespace Cinema.Domain.Models
-{
-    public class Actor : Entity<int>
-    {       
-        public Name Name { get; set; }
+namespace Cinema.Domain.Models;
 
-        private Actor(int id, Name name)
-        {
-            Name = name;
-        }
+public class Actor : AuditableEntity<int>
+{       
+    public Name Name { get; set; }
 
+    public Actor(int id, Name name)
+    {
+        Name = name;
     }
+
 }

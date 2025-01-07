@@ -1,20 +1,19 @@
 ﻿using Cinema.Domain.Common;
 
-namespace Cinema.Domain.Models
-{
-    public class Comment : Entity<int>
-    {      
-        public string Text { get; set; }
-        public User User { get; set; }
-        public Movie Movie { get; set; }
+namespace Cinema.Domain.Models;
 
-        private Comment(int id,string text, User user, Movie movie)
-        {
-            Text = text;
-            User = user;
-            Movie = movie;
-        }
+public class Comment : AuditableEntity<int>
+{      
+    public string Text { get; set; }
+    public User User { get; set; }
+    public Movie Movie { get; set; }
 
-
+    public Comment(string text, User user, Movie movie)
+    {
+        Text = text;
+        User = user;
+        Movie = movie;
     }
+
+
 }
