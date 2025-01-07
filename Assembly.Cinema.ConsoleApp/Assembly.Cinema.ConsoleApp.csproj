@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Assembly.Cinema.Domain.Core\Assembly.Cinema.Domain.Core.csproj" />
+    <ProjectReference Include="..\Assembly.Cinema.IoC\Assembly.Cinema.IoC.csproj" />
+    <ProjectReference Include="..\Assembly.Cinema.Services\Assembly.Cinema.Services.csproj" />
     <ProjectReference Include="..\Cinema.Domain\Cinema.Domain.csproj" />
   </ItemGroup>
 
