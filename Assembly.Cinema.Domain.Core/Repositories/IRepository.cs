@@ -1,6 +1,6 @@
 ﻿using Cinema.Domain.Interfaces;
 
-namespace Assembly.Cinema.Domain.Core.IRepository
+namespace Assembly.Cinema.Domain.Core.Repositories
 {
     public interface IRepository<TEntity, TId> where TEntity : IEntity<TId>
     {

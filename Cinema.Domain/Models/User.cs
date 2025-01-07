@@ -19,4 +19,6 @@ public class User : AuditableEntity<int>
         Reviews = reviews;
         PurchasedTicket = purchasedTicket;
     }
+
+ 
 }

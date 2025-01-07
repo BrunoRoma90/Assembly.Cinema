@@ -1,5 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
-using Assembly.Cinema.Domain.Core.IRepository;
+using Assembly.Cinema.Domain.Core.Repositories;
 using Cinema.Domain.Models;
 
 namespace Assembly.Cinema.Data.Ado.Net.Repositories

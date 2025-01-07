@@ -1,5 +1,5 @@
 ﻿//Classe abstract é necessário criar outras classe que herdem dela
-using Assembly.Cinema.Domain.Core.IRepository;
+using Assembly.Cinema.Domain.Core.Repositories;
 
 public abstract class Repository<TEntity, Tid> : IRepository<TEntity, Tid> where TEntity : class
 {

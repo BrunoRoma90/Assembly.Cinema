@@ -1,4 +1,4 @@
-﻿using Assembly.Cinema.Domain.Core.IRepository;
+﻿using Assembly.Cinema.Domain.Core.Repositories;
 using Assembly.Cinema.Services.Interfaces;
 using Cinema.Domain.Models;
 

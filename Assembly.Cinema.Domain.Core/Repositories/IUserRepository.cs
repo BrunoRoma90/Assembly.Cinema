@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using Cinema.Domain.Models;
 
-namespace Assembly.Cinema.Domain.Core.IRepository
+namespace Assembly.Cinema.Domain.Core.Repositories
 {
     public interface IUserRepository : IRepository<User, int>
     {

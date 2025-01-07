@@ -1,5 +1,5 @@
 ﻿using Assembly.Cinema.Data.Ado.Net.Repositories;
-using Assembly.Cinema.Domain.Core.IRepository;
+using Assembly.Cinema.Domain.Core.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Assembly.Cinema.Data.Ado.Net

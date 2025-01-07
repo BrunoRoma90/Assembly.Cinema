@@ -1,4 +1,4 @@
-﻿using Assembly.Cinema.Domain.Core.IRepository;
+﻿using Assembly.Cinema.Domain.Core.Repositories;
 using Cinema.Domain.Models;
 
 public interface IMovieRepository : IRepository<Movie, int>
