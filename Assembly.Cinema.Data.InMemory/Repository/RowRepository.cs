@@ -1,33 +1,35 @@
 ﻿using Cinema.Domain.Models;
+using Assembly.Cinema.Domain.Core.Repositories;
 
-public class RowRepository : Repository<Row, int>, IRowRepository
+namespace Assembly.Cinema.Data.InMemory.Repository;
+public class RowRepository : IRowRepository
 {
-    public override void Add(Row obj)
+    public Row Add(Row obj)
     {
         throw new NotImplementedException();
     }
 
-    public override void Delete(Row obj)
+    public Row Delete(Row id)
     {
         throw new NotImplementedException();
     }
 
-    public override List<Row> GetAll()
+    public List<Row> GetAll()
     {
         throw new NotImplementedException();
     }
 
-    public override Row GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override void Update(Row obj)
+    public Row GetById(int id)
     {
         throw new NotImplementedException();
     }
 
     public Row GetRowBySeat(Seat seat)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Row Update(Row obj)
     {
         throw new NotImplementedException();
     }

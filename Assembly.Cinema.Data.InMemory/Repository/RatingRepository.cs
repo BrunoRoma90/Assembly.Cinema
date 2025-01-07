@@ -1,30 +1,30 @@
 ﻿using Cinema.Domain.Models;
+using Assembly.Cinema.Domain.Core.Repositories;
 
-public class RatingRepository : Repository<Rating, int>, IRatingRepository
+namespace Assembly.Cinema.Data.InMemory.Repository;
+
+public class RatingRepository : IRatingRepository
 {
-    public override void Add(Rating obj)
+    public Rating Add(Rating obj)
     {
         throw new NotImplementedException();
     }
 
-    public override void Delete(Rating obj)
+    public Rating Delete(Rating id)
     {
         throw new NotImplementedException();
     }
 
-    public override List<Rating> GetAll()
+    public List<Rating> GetAll()
     {
         throw new NotImplementedException();
     }
 
-    public override Rating GetById(int id)
+    public Rating GetById(int id)
     {
         throw new NotImplementedException();
     }
-    public override void Update(Rating obj)
-    {
-        throw new NotImplementedException();
-    }
+
     public List<Rating> GetRatingByMovie(Movie movie)
     {
         throw new NotImplementedException();
@@ -35,5 +35,8 @@ public class RatingRepository : Repository<Rating, int>, IRatingRepository
         throw new NotImplementedException();
     }
 
- 
+    public Rating Update(Rating obj)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -1,28 +1,25 @@
 ﻿using Cinema.Domain.Models;
+using Assembly.Cinema.Domain.Core.Repositories;
 
-public class ShowTimeRepository : Repository<Showtime, int>, IShowTimeRepository
+namespace Assembly.Cinema.Data.InMemory.Repository;
+public class ShowTimeRepository : IShowTimeRepository
 {
-    public override void Add(Showtime obj)
+    public Showtime Add(Showtime obj)
     {
         throw new NotImplementedException();
     }
 
-    public override void Delete(Showtime obj)
+    public Showtime Delete(Showtime id)
     {
         throw new NotImplementedException();
     }
 
-    public override List<Showtime> GetAll()
+    public List<Showtime> GetAll()
     {
         throw new NotImplementedException();
     }
 
-    public override Showtime GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override void Update(Showtime obj)
+    public Showtime GetById(int id)
     {
         throw new NotImplementedException();
     }
@@ -33,6 +30,11 @@ public class ShowTimeRepository : Repository<Showtime, int>, IShowTimeRepository
     }
 
     public Showtime GetShowtimeByMovie(Movie movie)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Showtime Update(Showtime obj)
     {
         throw new NotImplementedException();
     }

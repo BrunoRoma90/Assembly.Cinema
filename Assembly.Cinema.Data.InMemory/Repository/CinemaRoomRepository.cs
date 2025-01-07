@@ -1,34 +1,9 @@
 ﻿using Cinema.Domain.Models;
+using Assembly.Cinema.Domain.Core.Repositories;
 
-public class CinemaRoomRepository : Repository<CinemaRoom, int>, ICinemaRoomRepository
+namespace Assembly.Cinema.Data.InMemory.Repository;
+
+public class CinemaRoomRepository : ICinemaRepository
 {
-    public override void Add(CinemaRoom cinemaRoom)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override void Delete(CinemaRoom cinemaRoom)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override List<CinemaRoom> GetAll()
-    {
-        throw new NotImplementedException();
-    }
-
-    public override CinemaRoom GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override void Update(CinemaRoom cinemaRoom)
-    {
-        throw new NotImplementedException();
-    }
-
-    public CinemaRoom GetCinemaRoomByNumber(int number)
-    {
-        throw new NotImplementedException();
-    }
+    
 }

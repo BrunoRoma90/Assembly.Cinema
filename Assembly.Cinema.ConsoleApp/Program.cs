@@ -7,9 +7,14 @@ using Microsoft.Extensions.DependencyInjection;
 // Seed Data
 
 
-        var services = new ServiceCollection();
+var services = new ServiceCollection();     
 
-        services.AddServices();
-        services.AddSingleton<Start>();
+services.AddServices();
+services.AddSingleton<Start>();
 
-        using var serviceProvider = services.BuildServiceProvider();
+using var serviceProvider = services.BuildServiceProvider();
+
+var start = serviceProvider.GetRequiredService<Start>();
+
+start.Run();
+        

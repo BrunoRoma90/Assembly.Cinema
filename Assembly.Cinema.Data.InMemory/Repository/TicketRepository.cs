@@ -1,30 +1,34 @@
 ﻿using Cinema.Domain.Models;
-
-public class TicketRepository : Repository<Ticket, int>, ITicketRepository
+using Assembly.Cinema.Domain.Core.Repositories;
+namespace Assembly.Cinema.Data.InMemory.Repository;
+internal class TicketRepository : ITicketRepository
 {
-    public override void Add(Ticket obj)
+    private readonly Database _db;
+
+    public TicketRepository(Database database)
+    {
+        _db = database;
+    }
+    public Ticket Add(Ticket obj)
     {
         throw new NotImplementedException();
     }
 
-    public override void Delete(Ticket obj)
+    public Ticket Delete(Ticket id)
     {
         throw new NotImplementedException();
     }
 
-    public override List<Ticket> GetAll()
+    public List<Ticket> GetAll()
     {
         throw new NotImplementedException();
     }
 
-    public override Ticket GetById(int id)
+    public Ticket GetById(int id)
     {
         throw new NotImplementedException();
     }
-    public override void Update(Ticket obj)
-    {
-        throw new NotImplementedException();
-    }
+
     public Ticket GetTicketBySeat(Seat seat)
     {
         throw new NotImplementedException();
@@ -40,5 +44,8 @@ public class TicketRepository : Repository<Ticket, int>, ITicketRepository
         throw new NotImplementedException();
     }
 
-   
+    public Ticket Update(Ticket obj)
+    {
+        throw new NotImplementedException();
+    }
 }

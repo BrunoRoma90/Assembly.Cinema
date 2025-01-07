@@ -1,29 +1,26 @@
 ﻿using Cinema.Domain.Models;
+using Assembly.Cinema.Domain.Core.Repositories;
 
-public class CommentRepository : Repository<Comment, int>, ICommentRepository
+namespace Assembly.Cinema.Data.InMemory.Repository;
+
+public class CommentRepository : ICommentRepository
 {
-    public override void Add(Comment comment)
+    public Comment Add(Comment obj)
     {
         throw new NotImplementedException();
     }
 
-    public override void Delete(Comment comment)
+    public Comment Delete(Comment id)
     {
         throw new NotImplementedException();
     }
 
-    public override List<Comment> GetAll()
+    public List<Comment> GetAll()
     {
         throw new NotImplementedException();
     }
 
-    public override Comment GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-   
-    public override void Update(Comment comment)
+    public Comment GetById(int id)
     {
         throw new NotImplementedException();
     }
@@ -38,5 +35,8 @@ public class CommentRepository : Repository<Comment, int>, ICommentRepository
         throw new NotImplementedException();
     }
 
-
+    public Comment Update(Comment obj)
+    {
+        throw new NotImplementedException();
+    }
 }

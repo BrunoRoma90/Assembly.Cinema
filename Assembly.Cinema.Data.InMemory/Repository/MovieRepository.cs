@@ -1,28 +1,26 @@
 ﻿using Cinema.Domain.Models;
+using Assembly.Cinema.Domain.Core.Repositories;
 
-public class MovieRepository : Repository<Movie, int>, IMovieRepository
+namespace Assembly.Cinema.Data.InMemory.Repository;
+
+public class MovieRepository : IMovieRepository
 {
-    public override void Add(Movie movie)
+    public Movie Add(Movie obj)
     {
         throw new NotImplementedException();
     }
 
-    public override void Delete(Movie movie)
+    public Movie Delete(Movie id)
     {
         throw new NotImplementedException();
     }
 
-    public override List<Movie> GetAll()
+    public List<Movie> GetAll()
     {
         throw new NotImplementedException();
     }
 
-    public override Movie GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override void Update(Movie movie)
+    public Movie GetById(int id)
     {
         throw new NotImplementedException();
     }
@@ -37,5 +35,8 @@ public class MovieRepository : Repository<Movie, int>, IMovieRepository
         throw new NotImplementedException();
     }
 
-
+    public Movie Update(Movie obj)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -86,5 +86,9 @@ namespace Assembly.Cinema.Data.InMemory.Repository
             throw new NotImplementedException();
         }
 
+        public List<User> GetallByName(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

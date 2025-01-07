@@ -1,28 +1,26 @@
 ﻿using Cinema.Domain.Models;
+using Assembly.Cinema.Domain.Core.Repositories;
 
-public class PaymentRepository : Repository<Payment, int>, IPaymentRepository
+namespace Assembly.Cinema.Data.InMemory.Repository;
+
+public class PaymentRepository : IPaymentRepository
 {
-    public override void Add(Payment obj)
+    public Payment Add(Payment obj)
     {
         throw new NotImplementedException();
     }
 
-    public override void Delete(Payment obj)
+    public Payment Delete(Payment id)
     {
         throw new NotImplementedException();
     }
 
-    public override List<Payment> GetAll()
+    public List<Payment> GetAll()
     {
         throw new NotImplementedException();
     }
 
-    public override Payment GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override void Update(Payment obj)
+    public Payment GetById(int id)
     {
         throw new NotImplementedException();
     }
@@ -37,6 +35,8 @@ public class PaymentRepository : Repository<Payment, int>, IPaymentRepository
         throw new NotImplementedException();
     }
 
-
-
+    public Payment Update(Payment obj)
+    {
+        throw new NotImplementedException();
+    }
 }

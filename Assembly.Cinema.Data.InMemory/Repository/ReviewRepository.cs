@@ -1,37 +1,40 @@
 ﻿using Cinema.Domain.Models;
+using Assembly.Cinema.Domain.Core.Repositories;
 
-public class ReviewRepository : Repository<Review, int>, IReviewRepository
+namespace Assembly.Cinema.Data.InMemory.Repository;
+public class ReviewRepository : IReviewRepository
 {
-    public override void Add(Review obj)
+    public Review Add(Review obj)
     {
         throw new NotImplementedException();
     }
 
-    public override void Delete(Review obj)
+    public Review Delete(Review id)
     {
         throw new NotImplementedException();
     }
 
-    public override List<Review> GetAll()
+    public List<Review> GetAll()
     {
         throw new NotImplementedException();
     }
 
-    public override Review GetById(int id)
+    public Review GetById(int id)
     {
         throw new NotImplementedException();
     }
 
-    public override void Update(Review obj)
-    {
-        throw new NotImplementedException();
-    }
     public Review GetReviewByMovie(Movie movie)
     {
         throw new NotImplementedException();
     }
 
     public Review GetReviewByUser(User user)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Review Update(Review obj)
     {
         throw new NotImplementedException();
     }

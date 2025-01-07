@@ -13,7 +13,7 @@ public class Payment : AuditableEntity<int>
     public bool IsSuccessful { get; set; }
 
 
-    private Payment(User user, Ticket ticket, string paymentMethod, DateTime paymentDate, bool isSuccessful):
+    private Payment(User user, Ticket ticket, string paymentMethod, DateTime paymentDate, bool isSuccessful)
     {
         User = user;
         Ticket = ticket;

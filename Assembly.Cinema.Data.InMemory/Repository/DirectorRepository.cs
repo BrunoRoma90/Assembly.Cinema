@@ -1,33 +1,36 @@
 ﻿using Cinema.Domain.Models;
+using Assembly.Cinema.Domain.Core.Repositories;
 
-public class DirectorRepository : Repository<Director, int>, IDirectorRepository
+namespace Assembly.Cinema.Data.InMemory.Repository;
+
+public class DirectorRepository : IDirectorRepository
 {
-    public override void Add(Director director)
+    public Director Add(Director obj)
     {
         throw new NotImplementedException();
     }
 
-    public override void Delete(Director director)
+    public Director Delete(Director id)
     {
         throw new NotImplementedException();
     }
 
-    public override List<Director> GetAll()
+    public List<Director> GetAll()
     {
         throw new NotImplementedException();
     }
 
-    public override Director GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public override void Update(Director director)
+    public Director GetById(int id)
     {
         throw new NotImplementedException();
     }
 
     public Director GetDirectorByName(Name name)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Director Update(Director obj)
     {
         throw new NotImplementedException();
     }
