@@ -1,16 +1,15 @@
 ﻿using Assembly.Cinema.Data.InMemory;
-using Assembly.Cinema.Services;
+using Assembly.Cinema.Data.
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Assembly.Cinema.IoC
-{
-    public static class DependencyInjection
-    {
-        public static void AddServices(this IServiceCollection services)
-        {
-            services.AddServices();
+namespace Assembly.Cinema.IoC;
 
-            services.AddDataInMemoryServices();
-        }
+public static class DependencyInjection
+{
+    public static void AddServices(this IServiceCollection services)
+    {
+        services.AddDataAdoNetServices();
+
+        services.AddDataInMemoryServices();
     }
 }

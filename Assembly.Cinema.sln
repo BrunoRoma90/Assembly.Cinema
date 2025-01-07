@@ -14,9 +14,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Cinema.Services", "Assembly.Cinema.Services\Assembly.Cinema.Services.csproj", "{40E6548D-E529-4F5F-9554-BCDE73B64E28}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{C4ABC7BC-DD7D-4B91-83BC-7B8196DA93B8}"
-	ProjectSection(SolutionItems) = preProject
-		Cinema.Domain\Models\Review.cs = Cinema.Domain\Models\Review.cs
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Cinema.Data", "Assembly.Cinema.Data\Assembly.Cinema.Data.csproj", "{B0D2E8E4-6720-4588-BBBF-230214986ADA}"
 EndProject
