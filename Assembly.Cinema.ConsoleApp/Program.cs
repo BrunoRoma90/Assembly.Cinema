@@ -1,15 +1,15 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using Assembly.Cinema.ConsoleApp.UserInterface;
+using Assembly.Cinema.IoC;
+using Microsoft.Extensions.DependencyInjection;
 
-public class Program
-{
-    private static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, World!");
+//Inicializar tudo (infra, data)
 
-
-    }
+// Seed Data
 
 
-    
+        var services = new ServiceCollection();
 
-}
+        services.AddServices();
+        services.AddSingleton<Start>();
+
+        using var serviceProvider = services.BuildServiceProvider();
